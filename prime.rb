@@ -1,3 +1,3 @@
 def isPrime?(num)
-     num.prime?
+     num.isPrime?
  end
