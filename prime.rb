@@ -6,3 +6,4 @@ def isPrime?(num)
   }
   true
   end
+end
