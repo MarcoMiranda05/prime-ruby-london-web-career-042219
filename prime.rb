@@ -1,15 +1,3 @@
-def prime?(number)
-  range = (2..(number - 1)).to_a
-  check = true
-  if number < 2
-    check = false
-  else
-    range.each do |x|
-      if number % x == 0
-        check = false
-        break
-      end
-    end
-  end
-   puts check
-end
+def prime?(integer)
+  test_divisors = (2..(integer - 1)).to_a	  test_divisors = (2..(integer - 1)).to_a
+  if test_divisors.any? {|divisor| integer % divisor == 0} || integer == 0 || integer == 1 	  (test_divisors.any? {|divisor| integer % divisor == 0} || integer == 0 || integer == 1) ? false : true
