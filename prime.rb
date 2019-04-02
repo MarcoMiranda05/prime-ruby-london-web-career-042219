@@ -1,4 +1,8 @@
-def is_prime?(num)
-  return if num <= 1
-  (2..Math.sqrt(num)).none? { |i| (num % i).zero? }
-end
+def isPrime?(num)
+  (2..Math.sqrt(num)).each { |i|
+  if num % i == 0 && i < num
+    return false
+  end
+  }
+  true
+  end
