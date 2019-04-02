@@ -3,5 +3,5 @@ def prime(number)
     return "True"
   else
     return "False"
-
+  end
 end
